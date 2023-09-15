@@ -25,95 +25,15 @@
         }
 
         /* Add responsive styles here if needed */
+
+                /*******************************************
+Sup Badges by TipRicks Starts
+*******************************************/
+.ribred{color:#fff;vertical-align: super; font-size: smaller;top:4px;right:-3px;font-size:10px;font-weight:700;background:red;padding:1px 4px;border-radius:3px;animation:hotBSW .6s infinite;line-height:normal}
+@keyframes hotBSW{from{opacity:0}to{opacity:1}}
+/*******************************************
+Sup Badges by TipRicks End
+*******************************************/
     </style>
-    <a href='https://rdn.pfno.org/p/rdn-exam-registration.html'><div class="apply-box">Apply for<br />RDN Exam<br/>2024</div></a></div>
+    <a href='https://rdn.pfno.org/p/rdn-exam-registration.html'><div class="apply-box">Apply for<br />RDN Exam<br/>2024 <span class='ribred'>IMP</span></div></a></div>
 
-
-  
-    <style>
-        /* Your CSS styles for the popup */
-        .popup-overlay {
-            /* Styles for the overlay background */
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: none;
-            background-color: rgba(0, 0, 0, 0.5);
-            align-items: center;
-            justify-content: center;
-            z-index: 98;
-            color: #000;
-        }
-
-        .popup-container {
-            /* Styles for the popup content container */
-            position: relative;
-            background-color: #fff;
-            max-width: 500px;
-            width: 90%;
-            padding: 30px;
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        .popup-container h2 {
-            /* Styles for the popup title */
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .popup-container p {
-            /* Styles for the popup text */
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        .close-popup {
-            /* Styles for the close button */
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            font-size: 28px;
-            font-weight: bold;
-            color: #aaa;
-            background-color: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
-    </style>
-
-    <!-- Popup HTML structure -->
-    <div class="popup-overlay">
-        <div class="popup-container">
-            <h2>RDN Exam 2024 Registration Started</h2>
-            <p><a href='https://rdn.pfno.org/2023/08/registered-dietitian-nutritionist-rdn-examination-2024.html'>Check Complete Details</a></p>
-            <p><a href='https://rdn.pfno.org/2023/04/registered-dietitian-nutritionist-rdn-examination-test-contents-outline-pakistan.html'>Check Detailed Contents</a></p>
-            <p><a href='https://rdn.pfno.org/p/rdn-exam-registration.html'>Registration Form</a> <span class='ribred'>IMP</span></p>
-            <button class='close-popup'>&#215;</button>
-        </div>
-    </div>
-
-<script>
-         // JavaScript code for displaying the popup
-        const popupOverlay = document.querySelector(".popup-overlay");
-        const closePopupBtn = document.querySelector(".close-popup");
-
-        // Check if the popup has been closed in this session
-        const popupClosedSession = sessionStorage.getItem("popupClosedSession");
-
-        // Display the popup after a delay (5 seconds in this example)
-        if (!popupClosedSession) {
-            setTimeout(function() {
-                popupOverlay.style.display = "flex";
-            }, 5000);
-        }
-
-        // Close the popup and set the session storage item
-        closePopupBtn.addEventListener("click", function() {
-            popupOverlay.style.display = "none";
-            sessionStorage.setItem("popupClosedSession", "true");
-        });
-</script>
